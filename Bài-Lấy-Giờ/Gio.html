@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Văn Bản Đổi Màu</title>
+    <style>
+        /* Thêm kiểu dáng CSS cho màu chữ */
+        #greetingText {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Đoạn văn bản cần thay đổi màu -->
+    <div id="greetingText">Chào mừng bạn!</div>
+
+    <!-- Đoạn mã JavaScript -->
+    <script>
+        // Hàm để lấy thời gian hiện tại
+        function getCurrentTime() {
+            const now = new Date();
+            return now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
+        }
+
+        // Hàm để thay đổi màu chữ của đoạn văn bản
+        function changeTextColor() {
+            const greetingText = document.getElementById("greetingText");
+            const currentTime = getCurrentTime();
+
+            // Lấy giây hiện tại từ thời gian
+            const seconds = new Date().getSeconds();
+
+            // Thay đổi màu chữ thành đỏ nếu giây chẵn, ngược lại là xanh
+            greetingText.style.color = seconds % 2 === 0 ? "red" : "green";
+
+            // Hiển thị thời gian hiện tại trong đoạn văn bản
+            greetingText.innerText = "Chào mừng bạn! Bây giờ là " + currentTime;
+        }
+
+        // Gọi hàm thay đổi màu chữ mỗi giây
+        setInterval(changeTextColor, 1000);
+    </script>
+</body>
+</html>
