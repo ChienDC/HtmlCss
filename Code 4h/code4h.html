@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Danh Mục Đầu Tư</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Danh Mục Đầu Tư Cá Nhân</h1>
+        <nav>
+            <a href="#about">Giới Thiệu</a>
+            <a href="#skills">Kỹ Năng</a>
+            <a href="#project">Dự Án</a>
+            <a href="#contact">Liên Hệ</a>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>Giới Thiệu</h2>
+        <p><h3>2 Dự án sẽ phát triển mạnh năm 2024</h3></p>
+    </section>
+
+    <section id="skills">
+        <h2>Kỹ Năng</h2>
+        <p><li><b>HTML</b></li>
+        <li><b>CSS</b></li>
+        <li><b>JavaScript</b></li></p>
+    </section>
+
+    <section class="project">
+        <h2>Dự Án</h2>
+        <h4><li>Dự án Ứng Dụng MyViettel</li></h4>
+        <div class="project-item">
+            <img src="images/myviettel.jpeg" alt="Project 1">
+            <p>Mô tả về dự án : <b>MyViettel</b> là ứng dụng thông minh hỗ trợ người dùng mạng Viettel các tính năng hữu ích như: tra cứu thông tin thuê bao, tra cứu khuyến mại, tìm kiếm cửa hàng gần nhất, đồng bộ danh bạ, nhắn tin để thông báo đổi số. Ứng dụng được phát triển trên nhiều nền tảng như : IOS, Android, Windowsphone 8.1 trở lên và Windows10 mobile.</p>
+        </div>
+        <div class="project-item">
+            <h4><li>Dự án Website SME Viettel</li></h4>
+            <img src="images/SME.jpeg" alt="Project 2">
+            <p>Mô tả về dự án : Là một trong những đơn vị đầu tiên tham gia phát triển và cung cấp dịch vụ công điện tử. <b>Viettel CA</b> tự hào là đơn vị cung cấp dịch vụ chữ ký số công cộng được khách hàng tin tưởng và sử dụng nhiều nhất. Với bề dày kinh nghiệm, đội ngủ nhân viên trẻ trung, năng động, chuyên môn cao, <b>Viettel CA</b> không ngừng phát triển, đem đến cho khách hàng những dịch vụ tốt nhất.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Liên Hệ</h2>
+        <form id="contactForm" action="#" method="post">
+            <label for="name">Tên:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Tin Nhắn:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="button" onclick="validateForm()">Gửi</button>
+        </form>
+        <p id="successMessage" style="color: green;"></p>
+        <p id="errorMessage" style="color: red;"></p>
+    </section>
+    <button onclick="backToTop()" id="backToTopBtn" title="Back to Top">&#9650;</button>
+    <script src="js/code4h.js"></script>
+</body>
+</html>
