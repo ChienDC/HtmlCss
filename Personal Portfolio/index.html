@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <header>
+            <h1>Welcome to My Portfolio</h1>
+            <p>A brief description of my work and experience.</p>
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sint illo odit fugiat exercitationem nulla rem perferendis hic atque! Soluta, beatae dolores architecto natus harum a velit! Non, accusamus sint.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <div class="project-image">
+                    <img src="images/1.jpeg" alt="Project 1">
+                </div>
+                <div class="project-description">
+                    <h3>Project 1</h3>
+                    <p>Project 1 Description</p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-image">
+                    <img src="images/2.jpeg" alt="Project 2">
+                </div>
+                <div class="project-description">
+                    <h3>Project 2</h3>
+                    <p>Project 2 Description</p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-image">
+                    <img src="images/3.jpeg" alt="Project 3">
+                </div>
+                <div class="project-description">
+                    <h3>Project 3</h3>
+                    <p>Project 3 Description</p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-image">
+                    <img src="images/4.jpeg" alt="Project 4">
+                </div>
+                <div class="project-description">
+                    <h3>Project 4</h3>
+                    <p>Project 4 Description</p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-image">
+                    <img src="images/5.jpeg" alt="Project 5">
+                </div>
+                <div class="project-description">
+                    <h3>Project 5</h3>
+                    <p>Project 5 Description</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form onsubmit="submitForm(event)">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Meddage" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        </section>
+
+        <a href="#" id="back-to-top-button" title="Back to Top">&uarr;</a>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
