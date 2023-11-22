@@ -35,33 +35,33 @@ window.onclick = (event) => {
     var text;
     //Name should have more than 3 characters
    if (name.length < 2) {
-        text = "Please Enter valid Name (Minimum 3 characters)";
+        text = "Vui lòng nhập Tên ( Tối thiểu 3 kí tự )";
         error_message.innerHTML = text;
         return false;
  }
     if (subject.length < 10) {
-        text = "Please Enter Correct Subject (Minimum 10 characters)";
+        text = "Vui lòng nhập địa chỉ ( Tối thiểu 10 kí tự )";
         error_message.innerHTML = text;
         return false;
     }
    if (isNaN(phone) || phone.length != 10) {
-        text = "Please Enter valid Phone Number (10-digit)";
+        text = "Số Điện Thoại không hợp lệ (Vui lòng nhập đúng SĐT)";
         error_message.innerHTML = text;
         return false;    }
-    //Message should have more than 140 characters 
-    if (message.length <= 140) {
-        text = "Please enter more than 140 Characters";
+    //Message should have more than 5 characters 
+    if (email.length <= 5) {
+        text = "Vui lòng nhập Email";
         error_message.innerHTML = text;
         return false;
     }
     //Message should have less than 500 characters 
     if (message.length >= 500) {
-      text = "Please enter less than 500 Characters";
+      text = "Vui lòng nhập Tin Nhắn";
       error_message.innerHTML = text;
       return false;
   }
    // This alert message will appear if all form fields are filled correctly
-    alert("Form submitted successfully! Thank you for contacting us");
+    alert("Đã gửi thành công !! Cảm ơn Bạn đã gửi đóng góp cho Milano SHOP");
     return true;
 }
 //Search functionality
